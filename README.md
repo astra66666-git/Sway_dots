@@ -31,4 +31,6 @@
 <img width="1920" height="1080" alt="screenshot-20261124-183620" src="https://github.com/user-attachments/assets/d63fd374-8117-49df-b369-1e82a74a4ccd" />
 
 
+
+### Font use - JetbrainsMono NFP SemiBold
 credit goes to [@adi1090x](https://github.com/adi1090x/rofi) for rofi color-palette, launcher, powermenu customization.
