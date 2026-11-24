@@ -5,11 +5,11 @@
 
 <img width="1920" height="1080" alt="screenshot-20261124-183359" src="https://github.com/user-attachments/assets/039fe489-469f-4385-b9c4-447d26a846c4" />
 
-##Waybar
+## Waybar
 
 <img width="1920" height="56" alt="screenshot-20261124-220835" src="https://github.com/user-attachments/assets/3158c00b-9368-4b53-9df0-e395e9d3e542" />
 
-##Wallpaper changer
+## Wallpaper changer
 
 <img width="682" height="683" alt="screenshot-20261124-221952" src="https://github.com/user-attachments/assets/3bbfdaa0-e90b-4ec2-9bad-f3097ad3484f" />
 
