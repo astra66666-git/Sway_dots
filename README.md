@@ -1,5 +1,5 @@
 # Sway_dots
-##My sway dots
+## My sway dots
 
 This is my personal fedora sway setup
 <img width="1920" height="1080" alt="screenshot-20261124-183359" src="https://github.com/user-attachments/assets/039fe489-469f-4385-b9c4-447d26a846c4" />
