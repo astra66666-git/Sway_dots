@@ -25,6 +25,10 @@
 
 <img width="571" height="612" alt="screenshot-20261124-222358" src="https://github.com/user-attachments/assets/a567b3be-4445-4f26-8068-60a34ae371f8" />
 
+## Swaync
+
+<img width="407" height="878" alt="screenshot-20261124-221110" src="https://github.com/user-attachments/assets/b5ff0194-f70c-4304-bae9-f32cdda99631" />
+
 
 ## Powermenu
 
