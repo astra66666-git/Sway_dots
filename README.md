@@ -1,5 +1,4 @@
 # Sway_dots
-## My sway dots
 
 ## This is my personal fedora sway setup
 
