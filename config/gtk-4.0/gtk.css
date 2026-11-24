@@ -1,0 +1,10 @@
+@define-color accent_bg_color #3584e4;
+@define-color accent_color #3584e4;
+@define-color theme_selected_bg_color #3584e4;
+@define-color theme_selected_fg_color #ffffff;
+
+selection,
+*:selected {
+    background-color: #3584e4;
+    color: #ffffff;
+}

@@ -1,0 +1,39 @@
+# Behavior
+ignore-empty-password
+show-failed-attempts
+
+# Background (Dark theme; swap with image=/path/to/wallpaper.png if preferred)
+image=/home/astra/Pictures/Wallpapers/minimalist-cat-desktop-wallpapers.png
+scaling=fill
+
+# Indicator Geometry
+indicator-radius=55
+indicator-thickness=8
+indicator-caps-lock
+
+# Indicator Colors (RRGGBBAA hex format)
+inside-color=1e1e2ecc
+inside-clear-color=fab387cc
+inside-caps-lock-color=f9e2afcc
+inside-ver-color=89b4facc
+inside-wrong-color=f38ba8cc
+
+ring-color=cba6f7ff
+ring-clear-color=fab387ff
+ring-caps-lock-color=f9e2afff
+ring-ver-color=89b4faff
+ring-wrong-color=f38ba8ff
+
+key-hl-color=a6e3a1ff
+bs-hl-color=f38ba8ff
+separator-color=11111bff
+line-color=00000000
+
+# Text
+font=sans-serif
+font-size=16
+text-color=cdd6f4ff
+text-clear-color=11111bff
+text-caps-lock-color=11111bff
+text-ver-color=11111bff
+text-wrong-color=11111bff

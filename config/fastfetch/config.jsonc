@@ -1,0 +1,113 @@
+{
+"display": {
+"color": {
+"keys": "white"
+},
+"key": {
+"width": 14
+},
+"separator": " "
+},
+"logo": {
+"color": {
+"1": "blue"
+},
+"padding": {
+"left": 2,
+"top": 2
+},
+"source": "~/.config/fastfetch/logo.txt",
+"type": "file"
+},
+"modules": [
+{
+"color": {
+"at": "bright_blue",
+"host": "bright_red",
+"user": "bright_red"
+},
+"type": "title"
+},
+"break",
+{
+"format": "{pretty-name}",
+"key": " os",
+"keyColor": "bright_blue",
+"type": "os"
+},
+{
+"key": " kernel",
+"keyColor": "bright_magenta",
+"type": "kernel"
+},
+{
+"format": "{pretty-name}",
+"key": " wm",
+"keyColor": "bright_red",
+"type": "wm"
+},
+{
+"format": "{pretty-name}",
+"key": " shell",
+"keyColor": "bright_green",
+"type": "shell"
+},
+{
+"key": " uptime",
+"keyColor": "yellow",
+"type": "uptime"
+},
+{
+"key": " Packages",
+"keyColor": "blue",
+"type": "packages"
+},
+{
+"format": "{name}",
+"key": " cpu",
+"keyColor": "cyan",
+"type": "cpu"
+},
+{
+"format": "",
+"key": " gpu",
+"keyColor": "magenta",
+"type": "gpu"
+},
+{
+"format": "{used} / {total}",
+"key": " ram",
+"keyColor": "bright_blue",
+"type": "memory"
+},
+{
+"format": "{used} / {total}",
+"key": " Swap",
+"keyColor": "green",
+"type": "swap"
+},
+{
+"format": "{size-used} / {size-total}  {filesystem}",
+"key": " Disk",
+"keyColor": "cyan",
+"type": "disk"
+},
+{
+"format": "{name} {size}",
+"key": " font",
+"keyColor": "yellow",
+"type": "terminalfont"
+},
+{
+"key": " Locale",
+"keyColor": "green",
+"type": "locale"
+},
+{
+"format": "{pretty-name}",
+"key": " color",
+"symbol": "circle",
+"type": "colors"
+}
+]
+}

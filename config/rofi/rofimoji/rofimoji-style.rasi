@@ -1,0 +1,133 @@
+/*****----- Configuration -----*****/
+configuration {
+    show-icons:                 true;
+}
+
+/*****----- Global Properties -----*****/
+@import                          "~/.config/rofi/shared/colors.rasi"
+@import                          "~/.config/rofi/shared/fonts.rasi"
+
+/*****----- Main Window -----*****/
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                       center;
+    fullscreen:                   false;
+    width:                        550px;
+
+    enabled:                      true;
+    margin:                       0px;
+    padding:                      0px;
+    border:                       0px;
+    border-radius:                0px;
+    border-color:                 @selected;
+    background-color:             @background;
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled: true;
+    spacing: 15px;
+    margin: 0px;
+    padding: 25px;
+    background-color: transparent;
+    children: [ "inputbar", "message", "listview" ];
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                      true;
+    spacing:                      10px;
+    margin:                       0px;
+    padding:                      12px;
+    border:                       0px;
+    border-radius:                4px;
+    background-color:             @background-alt;
+    text-color:                   @foreground;
+    children:                     [ "prompt", "entry" ];
+}
+
+prompt {
+    background-color:             inherit;
+    text-color:                   @selected;
+}
+
+entry {
+    background-color:             inherit;
+    text-color:                   @foreground;
+    cursor:                       text;
+    placeholder:                  "Search emoji...";
+    placeholder-color:            @foreground;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                      true;
+    columns:                      6;
+    lines:                        5;
+    cycle:                        true;
+    dynamic:                      true;
+    scrollbar:                    false;
+    layout:                       vertical;
+    reverse:                      false;
+    fixed-height:                 true;
+    fixed-columns:                true;
+
+    spacing:                      5px;
+    margin:                       0px;
+    padding:                      0px;
+
+    background-color:             transparent;
+    text-color:                   @foreground;
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                      true;
+    orientation:                  vertical;
+    spacing:                      5px;
+    margin:                       0px;
+    padding:                      10px 5px;
+    border:                       0px;
+    border-radius:                4px;
+    background-color:             transparent;
+    text-color:                   @foreground;
+    cursor:                       pointer;
+}
+
+element normal.normal {
+    background-color:             @background;
+    text-color:                   @foreground;
+}
+
+element selected.normal {
+    background-color:             @background-alt;
+    text-color:                   @selected;
+}
+
+element-icon {
+    background-color:             transparent;
+    text-color:                   inherit;
+    size:                         42px;
+}
+
+element-text {
+    font:                         "JetBrainsMonoNL Nerd Font 9";
+    background-color:             transparent;
+    text-color:                   inherit;
+    highlight:                    inherit;
+    vertical-align:               0.5;
+    horizontal-align:             0.5;
+}
+
+/*****----- Message -----*****/
+message {
+    padding:                      8px;
+    background-color:             @background-alt;
+    text-color:                   @foreground;
+}
+
+textbox {
+    background-color:             transparent;
+    text-color:                   inherit;
+}

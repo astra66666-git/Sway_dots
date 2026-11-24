@@ -1,0 +1,228 @@
+@import url("theme-colors.css");
+/* =========================================
+ * GLOBAL
+ * ========================================= */
+
+* {
+    font-family: "JetbrainsMono NFP SemiBold";
+}
+
+/* =========================================
+ * NOTIFICATIONS
+ * ========================================= */
+
+.notification {
+    background-color: @bg;
+    color: @fg;
+    border: 0px solid @fg;
+    border-radius: 0px;
+    padding: 10px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.6);
+}
+
+.body {
+    color: @fg;
+}
+
+.summary {
+    font-size: 13px;
+    font-weight: bold;
+    background: transparent;
+    color: @fg;
+    text-shadow: none;
+}
+
+.time {
+    font-size: 10px;
+    font-weight: bold;
+    background: transparent;
+    color: @fg;
+    text-shadow: none;
+    margin-right: 18px;
+}
+
+.close-button {
+    background-color: @bg;
+    color: @urgent;
+    margin: 5px 5px 0 0;
+    border-radius: 6px;
+}
+
+.close-button:hover {
+    background-color: @bg_alt;
+    color: @selected;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+    background: transparent;
+    color: @fg;
+}
+
+.notification.critical progress,
+.notification.low progress,
+.notification.normal progress {
+    background-color: @bg_alt;
+}
+
+/* =========================================
+ * CONTROL CENTER
+ * ========================================= */
+
+.control-center {
+    background-color: @bg;
+    color: @fg;
+    border: 0px solid @fg;
+    border-radius: 0px;
+    padding: 10px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.6);
+}
+
+/* =========================================
+ * NOTIFICATION GROUPS
+ * ========================================= */
+
+.notification-group {
+    background-color: transparent;
+    margin: 2px 8px;
+    font-size: 14px;
+}
+
+.notification-group-icon {
+    color: @fg;
+}
+
+.notification-group-headers {
+    color: @fg;
+}
+
+.notification-group-collapse-button,
+.notification-group-close-all-button {
+    background-color: @bg;
+    color: @fg;
+    margin: 4px;
+    border-radius: 0px;
+    padding: 4px;
+}
+
+.notification-group-collapse-button:hover,
+.notification-group-close-all-button:hover {
+    background-color: @bg_alt;
+    color: @selected;
+}
+
+/* =========================================
+ * WIDGET TITLE
+ * ========================================= */
+
+.widget-title {
+    color: @fg;
+}
+
+.widget-title > button {
+    font-size: 18px;
+    color: @fg;
+    background-color: @bg;
+    box-shadow: none;
+}
+
+.widget-title > button:hover {
+    background-color: @bg_alt;
+    color: @selected;
+}
+
+/* =========================================
+ * BUTTON GRID
+ * ========================================= */
+
+button {
+    border: none;
+    min-width: 35px;
+    border-radius: 0px;
+    background-color: @bg_alt;
+}
+
+.widget-buttons-grid {
+    font-size: 18px;
+    background-color: @bg;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+    color: @fg;
+    margin: 1px;
+    padding: 12px;
+    border-radius: 0px;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+    background-color: @fg;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
+    background-color: @selected;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked label {
+    color: @fg;
+}
+
+/* =========================================
+ * DO NOT DISTURB
+ * ========================================= */
+
+.widget-dnd {
+    background-color: transparent;
+    border: 2px solid transparent;
+    font-size: large;
+    color: @bg_alt;
+}
+
+.widget-dnd > label {
+    color: @fg;
+}
+
+.widget-dnd > switch {
+    background-color: @bg_alt;
+    color: @selected;
+    border-radius: 0px;
+}
+
+.widget-dnd > switch:checked {
+    background-color: @selected;
+    border: 2px solid @bg;
+}
+
+/* =========================================
+ * MUSIC PLAYER
+ * ========================================= */
+
+.widget-mpris {
+    background-color: transparent;
+    margin: 8px;
+}
+
+.widget-mpris button {
+    background-color: transparent;
+    border-radius: 6px;
+}
+
+.widget-mpris button:hover {
+    background-color: @selected;
+    color: @bg;
+}
+
+/* =========================================
+ * GENERAL SLIDERS
+ * ========================================= */
+
+trough slider {
+    background-color: @fg;
+}
+
+trough slider:hover {
+    background-color: @selected;
+}
+
+trough highlight {
+    background-color: @fg;
+}

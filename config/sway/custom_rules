@@ -1,0 +1,58 @@
+# Windows styles
+gaps inner 5
+gaps outer 5
+
+default_border pixel 2
+
+# Icons, Themes & Cursor setup
+exec_always {
+    gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
+    gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
+    gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
+    gsettings set org.gnome.desktop.interface accent-color "blue"
+}
+seat * xcursor_theme Bibata-Modern-Ice 30
+
+# Configure keyboard US English and Indian Bengali Phonetic layouts
+input "type:keyboard" {
+    xkb_layout "us,in"
+    xkb_variant ",ben-kagapa"
+    xkb_options "grp:win_space_toggle"
+}
+
+# Touchpad steup
+   input "1267:12985:ELAN06FA:00_04F3:32B9_Touchpad" {
+       dwt enabled
+       tap enabled
+       natural_scroll enabled
+       middle_emulation enabled
+   }
+   
+# Swaylock and Swayidle setup
+exec swayidle -w \
+         timeout 300 'swaylock -f -c 000000' \
+         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+         before-sleep 'swaylock -f -c 000000'
+ 
+# NMTUI POP-UP window 
+for_window [title="nmtui"] floating enable
+for_window [title="nmtui"] resize set width 700 hight 450
+for_window [title="nmtui"] move position center
+
+# Clipboard history
+exec wl-paste --type text --watch cliphist store
+exec wl-paste --type image --watch cliphist store
+
+# Polkit authentication agent setup
+exec /usr/libexec/lxqt-policykit-agent
+# LXQt PolicyKit authentication dialog
+for_window [app_id="lxqt-policykit-agent"] floating enable
+for_window [app_id="lxqt-policykit-agent"] resize set 450 250
+for_window [app_id="lxqt-policykit-agent"] move position center
+
+# Restore last selected wallpaper
+exec_always ~/.config/sway/wallpaper-restore.sh
+
+# Rofimoji for emoji
+bindsym $mod+period exec ~/.config/rofi/rofimoji/rofimoji.sh
+
