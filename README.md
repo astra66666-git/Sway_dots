@@ -15,7 +15,7 @@
 
 
 ## Rofi theme changer 
-(Theme effects for Waybar+Foot+Swaync+All rofi launcher)
+(Theme effects for Waybar+Foot+Sway+Swaync+All rofi launcher)
 
 <img width="478" height="552" alt="screenshot-20261124-222002" src="https://github.com/user-attachments/assets/e78dacd1-df28-46fc-868e-05c1ced37fd0" />
 
