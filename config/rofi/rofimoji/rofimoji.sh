@@ -13,3 +13,5 @@ rofimoji \
     --use-icons \
     --max-recent 10 \
     --selector-args="-theme $theme"
+sleep 0.1
+wtype -M ctrl v -m ctrl
